@@ -13,7 +13,7 @@ var Stack = function() {
     //increment count variable
     count++;
   };
-
+  //
   someInstance.pop = function() {
     //check if stack is empty
     if (count === 0) {
