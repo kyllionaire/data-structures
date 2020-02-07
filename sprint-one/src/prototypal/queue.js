@@ -10,8 +10,8 @@ var queueMethods = {};
 
 //create a count variable
 var count = 0;
-//push,pop,size functions
-//method to add to stack
+// enqueue(string),dequeue(),size()
+//method to add to queue
 queueMethods.enqueue = function(value) {
   //set key val pairs in this.storage obj
   this.storage[count] = value;
@@ -28,7 +28,7 @@ queueMethods.smallest = function() {
   }
   return small;
 };
-//method to delete from stack
+//method to delete from queue
 queueMethods.dequeue = function() {
   var deqe = this.storage[this.smallest()];
   delete this.storage[this.smallest()];
